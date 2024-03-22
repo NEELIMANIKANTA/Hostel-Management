@@ -1,0 +1,209 @@
+.logo {
+  max-height: 40px;
+  margin-left: 10px; 
+}
+
+.navbar {
+  background-color: #333; /* Dark background color */
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold; /* Make the brand text bold */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #f2f2f2;
+}
+
+/* Add some padding to navbar links for better touch experience on mobile */
+.nav-link {
+  padding: 8px 12px;
+}
+
+/* Add background color to navbar links on hover */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background color */
+  border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Active link style */
+.nav-item.active .nav-link {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+/* Active link style */
+.nav-item:nth-child(2) .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background color */
+  border-radius: 4px; /* Rounded corners */
+}
+.nav-item:nth-child(2) .nav-link:hover,
+.nav-item:nth-child(2).active .nav-link {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+
+ /* Additional CSS for background images with hover */
+    .image-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Arrange sections with space between */
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .image-section {
+      flex: 1; /* Make sections flexible to take equal space */
+      position: relative;
+      height: 100vh; /* Cover the entire viewport height */
+      background-size: cover;
+      background-position: center;
+      overflow: hidden; /* Hide overflowing content */
+      border-radius: 10px; /* Add border radius for rounded corners */
+      margin-bottom: 20px; /* Add margin between sections */
+      padding: 20px; /* Add padding to create boxed appearance */
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      display: flex;
+      flex-direction: column; /* Arrange details from top to bottom */
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s; /* Smooth transition */
+    }
+
+    .overlay h2 {
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px; /* Add spacing between title and content */
+    }
+
+    .overlay div {
+      max-width: 300px;
+      margin: 0 auto;
+      color: #fff;
+      text-align: center; /* Center the content */
+    }
+
+    .overlay ol {
+      padding-left: 0; /* Remove default padding */
+      list-style: none; /* Remove default list style */
+    }
+
+    .overlay ol li {
+      margin-bottom: 5px;
+    }
+
+    .image-section .overlay {
+      opacity: 1;
+    }
+
+    /* Animation for sliding effect */
+    @keyframes slideBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
+
+    .image-section {
+      animation: slideBackground 10s linear infinite; /* Adjust animation duration and timing as needed */
+    }
+
+    /* Additional CSS for horizontal navbar */
+    .navbar {
+      background-color: #9370DB; /* Medium Purple */
+    }
+
+    .navbar-brand img {
+      max-width: 50px; /* Adjust logo size */
+    }
+
+    /* Additional CSS for container */
+    .container-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Additional CSS for buttons */
+    .btn {
+      margin-top: 20px; /* Add spacing between buttons */
+    }
+
+    /* Additional CSS for navbar links */
+    .nav-link {
+      color: #fff; /* White text color */
+    }
+
+    .nav-link:hover {
+      color: #f8f9fa; /* Lighter text color on hover */
+    }
+
+    /* Additional CSS for image section */
+    .image-sections {
+      padding: 0 20px; /* Add padding to image sections container */
+    }
+
+    .image-section h2 {
+      margin-bottom: 20px; /* Add spacing below section headings */
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .image-section {
+        height: auto; /* Adjust height for smaller screens */
+      }
+    }
+    /* Media query for laptop screen width */
+@media (max-width: 1200px) {
+  body {
+    max-width: 1200px; /* Set maximum width for the body */
+    margin: 0 auto; /* Center the content horizontally */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+}
+

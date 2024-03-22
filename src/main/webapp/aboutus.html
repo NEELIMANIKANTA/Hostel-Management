@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="navstyles.css">
+  <style>
+    /* Custom CSS */
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #9370DB; /* Dark purple */
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      border: 1px solid #ccc; /* Add border */
+      border-radius: 10px; /* Add border radius */
+      padding: 20px; /* Add padding */
+    }
+
+    h2 {
+      color: #9370DB; /* Dark purple */
+    }
+
+
+    footer {
+      background-color: #9370DB; /* Dark purple */
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Responsive styling */
+    @media (min-width: 768px) {
+      main {
+        padding-left: 200px; /* Add left padding for larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="Home.html">
+        <img src="images/hostel.webp" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="room.jsp">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myBookings.jsp">MY Bookings</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.jsp">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <main>
+    <section id="company">
+      <h2>Sathya Technologies</h2>
+      <p>We are all Sathya Full Stack Java students.</p>
+      <p>Sathya Technologies is a renowned institute offering comprehensive training in various technologies.</p>
+      <p>Our teacher is Ratan, who is highly experienced and knowledgeable in the field.</p>
+    </section>
+
+    <section id="students">
+      <h2>Students</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Manikanta</strong></li>
+        <li class="list-group-item"><strong>Debashis</strong></li>
+        <li class="list-group-item"><strong>Siva</strong></li>
+        <li class="list-group-item"><strong>Kranthi Kumar</strong></li>
+        <li class="list-group-item"><strong>Abhishek</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sathya Technologies. All rights reserved.</p>
+  </footer>
+</body>
+</html>

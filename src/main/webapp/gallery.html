@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostel Images</title>
+<!-- Bootstrap CDN(Content Delivery Network) link to get support of BootStrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="navstyles.css">
+<style>
+/* Custom CSS for image gallery */
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-container div {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.image-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image-container div:hover .image-name {
+    opacity: 1;
+}
+
+/* Additional styling */
+
+
+
+
+.section-heading {
+    text-align: center; /* Centering section headings */
+    color: #007bff; /* Blue color for headings */
+}
+
+.image-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .image-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusting grid columns for smaller screens */
+    }
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="Home.html">
+            <img src="images/hostel.webp" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="room.jsp">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myBookings.jsp">MY Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.jsp">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="section">
+        <h2 class="section-heading">Zero Floor</h2>
+        <div class="image-container">
+            <div>
+                <img src="images/frontbuilding.jpeg" alt="front building">
+                <div class="image-name">Front Building</div>
+            </div>
+            <div>
+                <img src="images/office.jpeg" alt="Office area">
+                <div class="image-name">Office</div>
+            </div>
+            <div>
+                <img src="images/kitchen.jpeg" alt="Dining area">
+                <div class="image-name">Kitchen</div>
+            </div>
+            <div>
+                <img src="images/diningarea.webp" alt="Dining area">
+                <div class="image-name">Dining</div>
+            </div>
+            <div>
+                <img src="images/food.jpeg" alt="Food">
+                <div class="image-name">Food</div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-heading">1st Floor</h2>
+        <div class="image-container">
+            <div>
+                <img src="images/room1.jpeg" alt="Room1">
+                <div class="image-name">Room1</div>
+            </div>
+            <div>
+                <img src="images/room2.webp" alt="Room2">
+                <div class="image-name">Room2</div>
+            </div>
+            <div>
+                <img src="images/room3.webp" alt="Room3">
+                <div class="image-name">Room3</div>
+            </div>
+            <div>
+                <img src="images/room4.avif" alt="Room4">
+                <div class="image-name">Room4</div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-heading">Top Floor</h2>
+        <div class="image-container">
+            <div>
+                <img src="images/playarea.jpeg" alt="Play area">
+                <div class="image-name">Play area</div>
+            </div>
+            <div>
+                <img src="images/gymarea.webp" alt="Gym area">
+                <div class="image-name">Gym</div>
+            </div>
+        </div>
+    </div>
+    <!-- Middle Floor and Bottom Floor sections follow the same structure -->
+</div>
+
+<!-- Bootstrap JavaScript CDN(Content Delivery Network) link for supporting Boostrap's JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
